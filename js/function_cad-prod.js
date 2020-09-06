@@ -7,6 +7,6 @@ function cadastrar_produto() {
         alert("Insira os dados corretamente!"); 
     }else{
         alert("Produto: " + nomeProd + "\nPreço: " + precoProd +"\nCadastro realizado com sucesso!");
-        window.location = "home_cad_prod.html";
+        window.location = "listar_produtos.html";
     }
 }

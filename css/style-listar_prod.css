@@ -1,0 +1,15 @@
+table#alter thead { /* Toda a tabela com fundo creme */
+    background: #8b008b;
+    color: #fff;
+} 
+.btn-outline-color{
+    border-radius: 5px;
+    border-color: #8b008b;
+}
+.btn-icon {
+    background-color: transparent;
+    color: #8b008b;
+    padding: 8px 12px;
+    font-size: 18px;
+    border-color: transparent;
+  }
