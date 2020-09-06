@@ -1,50 +1,18 @@
-body, html {
-	height: 100%;
+html,
+body {
+  height: 100%;
 }
-.limiter {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 500px;
-  padding: 1px;
-}
-
-.container-layout {
-  width: 100%;  
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
+body {
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
-  padding: 15px;
-  position: relative;
-  background-color: #fff;
-	border-radius: 10px;
-	
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: honeydew;
 }
-
-.wrap-layout {
-  width: 500px;
-  background: #fff;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-}
-.layout-form {
-  width: 100%;
-  position: relative;
-}
-
 .layout-form-title {
-  font-family: JosefinSans-Bold;
-  font-size: 30px;
+  font-size: 40px;
   color: #fff;
   line-height: 1.2;
   text-align: center;
@@ -57,26 +25,57 @@ body, html {
   background-color: #8B008B;
   padding-top: 50px;
   padding-bottom: 39px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
-.wrap-input {
+.font-config{
+  font-size: large;
+}
+
+.div-size-small {
+  width: 50%;
+}
+.div-size-large {
   width: 100%;
-  background-color: #fff;
-  border-radius: 27px;
-  position: relative;
-  z-index: 1;
 }
-
-.input {
-  font-size: 15px;
-  color: #1b3815;
-  line-height: 1.2;
-
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 55px;
-  background: #ebebeb;
-  border-radius: 27px;
-  padding: 0 35px 0 35px;
+.button-color {
+  background-color: #8B008B;
+  color: #fff;
 }
-
+.div-btn1 button:hover {
+  background-color: #00FF7F;
+}
+.div-btn2 button:hover {
+  background-color: #A9A9A9;
+}
+.div-href a:hover{
+  background-color: #00CED1;
+}
+.form-signin {
+  width: 800px;
+  padding: 100px;
+  height: auto;
+  margin: auto;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 18px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.card-signin {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+.card-signin .card-body {
+  padding: 2rem;
+}
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
