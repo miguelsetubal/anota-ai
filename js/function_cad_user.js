@@ -17,11 +17,11 @@ function cadastrar_usuario() {
     if (nome == "" || email == "" || endereco == "" || cidade == "" || matricula == ""
     || curso == "" || periodo == "" || user == "") {
         alert("Insira os dados corretamente!");
-    }else if(cpf.lenght != 14 || cpf == ""){
+    }else if(cpf.length != "11" || cpf == ""){
         alert("CPF inválido.");
-    }else if(celular.lenght != 14 || celular == ""){
+    }else if(celular.length != "11" || celular == ""){
         alert("Número de telefone inválido.");
-    }else if(senha <= 6 || senha == ""){
+    }else if(senha.length <= "6" || senha == ""){
         alert("Senha muito curta.");
     }else{
         alert("CPF:"+ cpf + "\nNome:" + nome + "\nSexo:" + sexo + "\nEmail:" + email + "\nData de Nascimento:" + nascimento+
