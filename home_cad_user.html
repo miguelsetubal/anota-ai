@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/function_cad_user.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/style-login.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/style-cadastro_usuario.css" media="screen" />
+    <title>Anota Aí - Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card card-signin my-5">
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="no-margin">Cadastro de Usuário</h4>
+                            <hr />
+                        </div>
+
+                        <div class="form-group col-md-2">
+                            <label for="cpf" class="control-label">CPF*</label>
+                            <input type="text" placeholder="000.000.000-00" id="cpf" class="form-control" name="cpf" required>
+                        </div>
+
+                        <div class="form-group col-md-7 ">
+                            <label for="nome" class="control-label">Nome Completo*</label>
+                            <input type="text" id="nome" class="form-control" name="nome" required>
+                        </div>
+
+                        <div class="form-group col-md-3 ">
+                            <label for="sexo" class="control-label">Sexo</label>
+                            <select name="sexo" class="form-control" id="sexo">
+                              <option></option>
+                              <option value='F'>Feminino</option>
+                              <option value='M'>Masculino</option>
+                            </select>
+                        </div>
+                    </div>    
+                    <div class="row"> 
+                        
+
+                        <div class="form-group col-md-6 ">
+                            <label for="email" class="control-label">Email*</label>
+                            <input type="email" class="form-control" name="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group col-md-3 ">
+                            <label for="nascimento" class="control-label">Data de Nascimento*</label>
+                            <input type="date" id="nascimento" class="form-control" name="nascimento" required>
+                        </div>
+
+                        <div class="form-group col-md-3 ">
+                            <label for="celular" class="control-label">Telefone Celular*</label>
+                            <input type="tel" id="celular" placeholder="(00)00000-0000" class="form-control" name="celular" required>
+                          </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6 ">
+                            <label for="endereco" class="control-label">Endereço*</label>
+                            <input type="text" class="form-control" name="endereco" id="endereco" required>
+                        </div>
+
+                        <div class="form-group col-md-3 ">
+                            <label for="numero" class="control-label">Número</label>
+                            <input type="text" class="form-control" name="numero" id="numero">
+                        </div>
+
+                        <div class="form-group col-md-3 ">
+                            <label for="cidade" class="control-label">Cidade de Origem*</label>
+                            <input type="text" class="form-control" name="cidade" id="cidade" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-2 ">
+                            <label for="matricula" class="control-label">Matrícula* </label>
+                            <input type="text" class="form-control" name="matricula" id="matricula" required>
+                        </div>
+
+                        <div class="form-group col-md-4 ">
+                            <label for="curso" class="control-label">Curso*</label>
+                            <select name="curso" class="form-control" id="curso" required>
+                              <option></option>
+                              <option value='Ciências da Computação'>Ciências da Computação</option>
+                              <option value='Engenharia Ambiental'>Engenharia Ambiental</option>
+                              <option value='Engenharia Civil'>Engenharia Civil</option>
+                              <option value='Engenharia de Minas'>Engenharia de Minas</option>
+                              <option value='Sistemas de Informação'>Sistemas de Informação</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-3 ">
+                            <label for="periodo" class="control-label">Período* </label>
+                            <input type="text" class="form-control" name="perido" id="periodo" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-4 ">
+                            <label for="user" class="control-label">Usuário* </label>
+                            <input type="text" class="form-control" name="user" id="user" required>
+                        </div>
+                        <div class="form-group col-md-4 ">
+                            <label for="senha" class="control-label">Senha* </label>
+                            <input type="password" class="form-control" name="senha" id="senha" required>
+                        </div>
+                    </div>
+                    <p class="aviso">Os dados marcados com (*) são obrigatórios.</p>
+
+                    
+                    <div class="btn1">
+                        <button class="btn btn-lg btn-block button-color" type="button" onclick="cadastrar_usuario()" >Cadastrar</button>   
+                    </div>
+
+                    <div class="btn-group div-size-large">
+                    <div class="div-size-small href"> 
+                        <a href="index.html" class="btn btn-lg btn-block button-color">Voltar à tela de login</a>
+                    </div>
+
+                    <div class="div-size-small btn2">
+                        <button class="btn btn-lg btn-block button-color" type="reset" >Limpar Campos</button>   
+                    </div> 
+                    </div>
+
+                    <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+        
+            
+        
+    
+
+
+</body>
+
+</html>
