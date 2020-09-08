@@ -1,3 +1,4 @@
+
 function cadastrar_produto() {
     var nomeProd = document.getElementById('nome').value;    
     var precoProd = document.getElementById('preco').value;    
