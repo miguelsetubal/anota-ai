@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/function_nova_ficha.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" />
+    <link href="css/style-listar_prod.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style-cadastro_usuario.css" media="screen" />
+    <title>Anota Aí - Login</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card card-signin my-12">
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="no-margin">Adicionar Itens: <strong>Miguel Jonas Lima Setúbal</strong> </h4>
+                            <hr />
+                        </div>                        
+
+                    </div>                   
+
+                    <div class="row">                       
+
+                        <div class="form-group col-md-8 ">
+                            <label for="produto" class="control-label">Produto*</label>
+                            <select name="produto" class="form-control" id="produto" required>
+                                <option></option>
+                                <option value='Pão de Queijo'>Pão de Queijo - R$0,50</option>
+                                <option value='Café Pequeno'>Café Pequeno - R$0,50</option>
+                                <option value='Salada de Fruta'>Salada de Fruta - R$3,00</option>
+                                <option value='Pastel'>Pastel - R$2,50</option>
+                                <option value='Refrigerante (200ml)'>Refrigerante (200ml) - R$3,00</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4 ">
+                            <label for="qtd" class="control-label">Quantidade*</label>
+                            <input type="number" class="form-control" name="qtd" id="qtd" required>
+                        </div>
+                    </div>
+                   
+                    <p class="aviso">Os dados marcados com (*) são obrigatórios.</p>
+
+
+                    <div class="btn1">
+                        <button class="btn btn-lg btn-block button-color" type="button"
+                            onclick="add()">Adicionar</button>
+                    </div>
+
+                    <div class="btn-group div-size-large">
+                        <div class="div-size-small href">
+                            <a href="fichas_abertas.html" class="btn btn-lg btn-block button-color">Voltar</a>
+                        </div>
+
+                        <div class="div-size-small btn2">
+                            <button class="btn btn-lg btn-block button-color" type="reset">Limpar Campos</button>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+            
+        </div>  
+        <br>
+        <div class="card card-signin my-12">
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="no-margin">Ficha Cliente</h4>
+                        </div>                        
+
+                    </div>                   
+
+                    <div class="row">                      
+                        <table class="table table-striped table-hover" id="alter">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Produto</th>
+                                    <th scope="col">Valor por unidade</th>
+                                    <th scope="col">Quantidade</th>
+                                    <th scope="col">Valor Total</th>
+                                    <th scope="col">Funcionário Resp</th>
+                                    <th scope="col">Data da Compra</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Café pequeno</th>
+                                    <td>R$ 0,50</td>
+                                    <td>3</td>
+                                    <td>R$ 1,50</td>
+                                    <td>Maria</td>
+                                    <td>31/08/2020</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pão de Queijo</th>
+                                    <td>R$ 0,50</td>
+                                    <td>10</td>
+                                    <td>R$ 5,00</td>
+                                    <td>Maria</td>
+                                    <td>31/08/2020</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Salada de Frutas</th>
+                                    <td>R$ 3,00</td>
+                                    <td>1</td>
+                                    <td>R$ 3,00</td>
+                                    <td>Maria</td>
+                                    <td>05/09/2020</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total: R$ 9,50</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                   
+                    
+                    <hr>                    
+                    <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+                </form>
+                
+            </div>
+            
+        </div> 
+             
+    </div>
+    
+    </body>
+
+</html>
