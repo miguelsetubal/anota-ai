@@ -8,8 +8,7 @@ function cadastrar_usuario() {
     var senha = document.getElementById('senha').value;
     var conf_senha = document.getElementById('conf_senha').value;
 
-    if (nome == "" || email == "" ||  matricula == ""
-    || curso == "" || periodo == "") {
+    if (nome == "" || email == "" ||  matricula == ""|| curso == "" || periodo == "") {
         alert("Insira os dados corretamente!");
     }else if(cpf.length != "11" || cpf == ""){
         alert("CPF inválido.");
