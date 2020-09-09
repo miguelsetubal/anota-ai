@@ -8,8 +8,8 @@ function cadastrar_usuario() {
     var senha = document.getElementById('senha').value;
     var conf_senha = document.getElementById('conf_senha').value;
 
-    if (nome == "" || email == "" || endereco == "" || cidade == "" || matricula == ""
-    || curso == "" || periodo == "" || user == "") {
+    if (nome == "" || email == "" ||  matricula == ""
+    || curso == "" || periodo == "") {
         alert("Insira os dados corretamente!");
     }else if(cpf.length != "11" || cpf == ""){
         alert("CPF inválido.");
@@ -20,7 +20,7 @@ function cadastrar_usuario() {
     }else if(senha != conf_senha){
         alert("As senhas não correspondem.");
     }else{
-        alert("CPF:"+ cpf + "\nNome:" + nome + "\nEmail:" + email + "\nTelefone:" + celular + "\nEndereco:" + endereco + "\nNumero:" + numero + "\nCidade:" + cidade + "\nMatricula:"
-        + matricula + "\nCurso:" + curso + "\nPeriodo:" + periodo + "\nUsuario:" + user + "\nSenha:" + senha +"\nCadastro realizado com sucesso!");
+        alert("CPF:"+ cpf + "\nNome:" + nome + "\nEmail:" + email + "\nTelefone:" + celular + "\nMatricula:"
+        + matricula + "\nCurso:" + curso + "\nPeriodo:" + periodo + "\nSenha:" + senha +"\nCadastro realizado com sucesso!");
     }
 }
