@@ -1,6 +1,7 @@
 function abrir_ficha(){
     var cliente = document.getElementById('cliente').value;
     alert("Ficha aberta para o Cliente: " + cliente);
+    window.location = "fichas_abertas.html";
 
 }
 function add(){
