@@ -1,9 +1,10 @@
+function cadastrar_func() {
 var nome = document.getElementById('nome').value;
 var email = document.getElementById('email').value;
 var senha = document.getElementById('senha').value;
 var conf_senha = document.getElementById('conf_senha').value;
 
-function cadastrar_func() {
+
     if (nome == "" || email == "" ) {
         alert("Insira os dados corretamente!");
     } else if (senha.length <= "6" || senha == "") {
